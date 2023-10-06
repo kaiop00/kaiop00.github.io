@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.mobile-navbar {
+    align-items: center;
+    background-color: silver;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    z-index: 2;
+}
+
+.nav-button {
+    align-items: center;
+    background-color: #555;
+    color: #fff;
+    padding: 5px 10px;
+    margin-right: 10px;
+}
+
+.nav-button:hover {
+    background-color: #777;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left-sidebar {
+    padding-top: 30px;
+    width: 300px;
+    background-color: #eee;
+    min-height: 100vh;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    color: #555;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.gallery {
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.gallery-item {
+    width: calc(33.33% - 10px);
+   
+}
+/* width: calc(33.33% - 10px) usei pq isso defini a largura do elemento com base 
+em uma porcentagem da largura de seu contêiner pai, mas subtraindo
+10 pixels dessa largura. Nao coloque a largura e a altura em 150 px 
+pq nao coloquei nenhuma imagem, ai iria quebrar e ficar feio  */
+
+.gallery-item img { 
+    width: 100%;
+    height: auto;
+}
+
+.right-sidebar {
+   
+    padding-top: 30px;
+    flex-basis: 300px;
+    background-color: #eee;
+    min-height: 100vh;
+}
+
+
+footer {
+    background-color: silver;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    clear: both;
+}
